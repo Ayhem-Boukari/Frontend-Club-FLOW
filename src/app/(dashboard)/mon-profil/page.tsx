@@ -7,7 +7,7 @@ import ProfileCard from "./_components/ProfileCard";
 import EditProfileForm from "./_components/EditProfileForm";
 
 export const metadata: Metadata = {
-  title: "Melkart JE | Mon Profil",
+  title: "ClubFLOW | Mon Profil",
   description:
     "Affichez et modifiez vos informations personnelles sur le tableau de bord Melkart Junior Entreprise.",
 };

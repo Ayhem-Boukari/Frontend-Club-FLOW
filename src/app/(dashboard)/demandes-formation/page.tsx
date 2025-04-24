@@ -1,7 +1,7 @@
 import React from "react";
 import WorkshopRequestTable from "./_components/WorkshopRequestTable";
 export const metadata = {
-  title: "Melkart JE | Demandes des Formations",
+  title: "ClubFLOW | Demandes des Formations",
   description: "Consultez les demandes de formations soumises par les membres.",
 };
 

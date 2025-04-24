@@ -3,7 +3,7 @@ import { eventsList } from "@/dump";
 import { membersList } from "@/dump";
 
 export const metadata = {
-  title: "Melkart JE | Gestion des Présences",
+  title: "ClubFLOW | Gestion des Présences",
   description:
     "Marquez les présences et absences des membres pour des évènements spécifiques.",
 };

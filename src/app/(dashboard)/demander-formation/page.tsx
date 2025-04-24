@@ -1,7 +1,7 @@
 import React from "react";
 import WorkshopRequestForm from "./_components/WorkshopRequestForm";
 export const metadata = {
-  title: "Melkart JE | Demander une Formation",
+  title: "ClubFLOW | Demander une Formation",
   description:
     "Remplissez le formulaire pour demander une formation à l'équipe.",
 };

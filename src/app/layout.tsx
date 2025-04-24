@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast";
 const montserrat = Sora({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Melkart JE | HR Dashboard",
+  title: "ClubFLOW",
   description:
     "A comprehensive dashboard for Melkart Junior Entreprise, helping HR manage member-related activities and providing members with access to profiles, workshops, news, and more.",
 };

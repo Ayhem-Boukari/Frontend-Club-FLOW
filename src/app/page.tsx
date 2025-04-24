@@ -2,9 +2,9 @@ import Image from "next/image";
 import LoginForm from "@/components/LoginForm";
 
 export const metadata = {
-  title: "Melkart JE | Login",
+  title: "ClubFLOW | Login",
   description:
-    "Access your Melkart Junior Entreprise account. Log in to manage your profile, view workshops, news, and more.",
+    "Access your ClubFLOW account. Log in to manage your profile, view workshops, news, and more.",
 };
 
 export default function LoginPage() {

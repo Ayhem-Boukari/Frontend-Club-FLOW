@@ -1,7 +1,7 @@
 import MemberTable from "./_components/MemberTable";
 
 export const metadata = {
-  title: "Melkart JE | Gestion des Membres",
+  title: "ClubFLOW | Gestion des Membres",
   description:
     "Gérez les informations des membres, modifiez leurs profils ou supprimez des comptes.",
 };

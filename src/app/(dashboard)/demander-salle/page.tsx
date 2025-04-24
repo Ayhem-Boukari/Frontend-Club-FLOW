@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import { RoomRequestForm } from './_components/RoomRequestForm';
 
 export const metadata: Metadata = {
-  title: "Demander une salle",
+  title: "ClubFLOW | Demander une salle",
   description: "Formulaire de réservation de salle pour les activités des clubs",
 };
 

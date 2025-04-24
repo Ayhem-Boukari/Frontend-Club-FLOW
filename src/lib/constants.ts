@@ -26,11 +26,7 @@ export const pageRoutes = [
     route: "/gestion-evenements",
     icon: CalendarPlus,
   },
-  {
-    title: "Gestion des Présences",
-    route: "/gestion-presences",
-    icon: ClipboardPlus,
-  },
+ 
   { title: "Planning", route: "/planning", icon: CalendarClock },
 
   { title: "Gestion des Guides", route: "/gestion-guides", icon: BookPlusIcon },

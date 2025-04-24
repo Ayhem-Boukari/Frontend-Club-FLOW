@@ -21,7 +21,7 @@ export const guides: Guide[] = [
   },
   {
     _id: "3",
-    title: "Formation Wabna",
+    title: "Marketing",
     description:
       "Guide de stratégie marketing pour les membres du pôle Marketing.",
     club: "MELKART",

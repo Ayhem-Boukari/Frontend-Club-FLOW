@@ -2,7 +2,7 @@ import React from "react";
 import { guides } from "@/dump";
 import GuideCard from "./_components/GuideCard";
 export const metadata = {
-  title: "Melkart JE | Guides et Supports",
+  title: "ClubFLOW | Guides et Supports",
   description:
     "Accédez aux ressources éducatives et guides postés par les responsables.",
 };
