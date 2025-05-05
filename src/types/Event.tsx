@@ -10,7 +10,7 @@ export interface Event {
     | "Formation"
     | "Workshop"
     | "Autre";
-  club?:  "IEEE" | "MELKART" | "CME" | "MICROSOFT";
+  club?:  "IEEE" | "MELKART" | "CME" | "MICROSOFT" | "CPC";
   date: string;
   time: string;
   location: string;

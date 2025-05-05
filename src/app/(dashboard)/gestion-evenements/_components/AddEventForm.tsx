@@ -120,6 +120,7 @@ const AddEventForm: React.FC = () => {
             <option value="MELKART">MELKART</option>
             <option value="CME">CME</option>
             <option value="MICROSOFT">MICROSOFT</option>
+            <option value="CPC">CPC</option>
           </select>
         </div>
       )}

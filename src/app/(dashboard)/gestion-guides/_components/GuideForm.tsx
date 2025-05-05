@@ -67,11 +67,10 @@ const AddGuideForm: React.FC = () => {
         >
           <option value="">Sélectionnez un club</option>
           <option value="IEEE">IEEE</option>
-          <option value="MELKART">
-            MELKART
-          </option>
+          <option value="MELKART">MELKART</option>
           <option value="CME">CME</option>
           <option value="MICROSOFT">MICROSOFT</option>
+          <option value="CPC">CPC</option>
         </select>
       </div>
       <div>

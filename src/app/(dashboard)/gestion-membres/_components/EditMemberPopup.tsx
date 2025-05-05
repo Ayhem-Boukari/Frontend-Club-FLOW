@@ -130,6 +130,7 @@ const EditMemberPopup: React.FC<EditMemberPopupProps> = ({
               <option value="IEEE">IEEE</option>
               <option value="Mlekart">Mlekart</option>
               <option value="Microsoft">Microsoft</option>
+              <option value="CPC">CPC</option>
             </select>
           </div>
           <div>
@@ -148,7 +149,6 @@ const EditMemberPopup: React.FC<EditMemberPopupProps> = ({
               <option value="Vice-Président">Vice-Président</option>
               <option value="Secrétaire Général">Secrétaire Général</option>
               <option value="Trésorier">Trésorier</option>
-              <option value="Membre">Membre</option>
             </select>
           </div>
           <div>

@@ -5,8 +5,8 @@ export interface Member {
   email: string;
   phoneNumber: string;
   image: string;
-  club: "CME" | "IEEE" | "Mlekart" | "Microsoft";
-  role: "Président" | "Vice-Président" | "Secrétaire Général" | "Trésorier" | "Membre";
+  club: "CME" | "IEEE" | "Mlekart" | "Microsoft" | "CPC";
+  role: "Président" | "Vice-Président" | "Secrétaire Général" | "Trésorier";
   birthDate: string;
   address: string;
   link: string;
