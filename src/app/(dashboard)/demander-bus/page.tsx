@@ -6,7 +6,7 @@ export default function DemanderBusPage() {
     <div className="container mx-auto px-4 py-8">
       <div className="flex items-center mb-6">
         <Bus className="h-8 w-8 mr-2 text-blue-600" />
-        <h1 className="text-2xl font-bold text-gray-800">Demander un Bus</h1>
+        <h1 className="text-4xl font-bold text-primary">Demander un Bus</h1>
       </div>
       
       <div className="bg-gray-50 p-6 rounded-lg shadow-sm">

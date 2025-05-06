@@ -4,12 +4,15 @@ import {
   UserCircle2,
   Users2,
   ClipboardPlus,
+  ClipboardList,
   BookCopy,
   GraduationCap,
   BookPlusIcon,
   DoorOpen,
   DoorClosed,
-  Bus
+  Bus,
+  AlertCircle,
+  MessagesSquare
 } from "lucide-react";
 
 export const pageRoutes = [
@@ -26,7 +29,7 @@ export const pageRoutes = [
     route: "/gestion-evenements",
     icon: CalendarPlus,
   },
- 
+
   { title: "Planning", route: "/planning", icon: CalendarClock },
 
   { title: "Gestion des Guides", route: "/gestion-guides", icon: BookPlusIcon },
@@ -61,5 +64,27 @@ export const pageRoutes = [
     title: "Demandes de Bus",
     route: "/demandes-bus",
     icon: Bus
+  },
+  {
+    title: "Demander un Matériel",
+    route: "/demander-materiels",
+    icon: ClipboardPlus
+  },
+  {
+    title: "Demandes de Matériels",
+    route: "/demandes-materiels",
+    icon: ClipboardList
+  },
+
+  // 🆕 Ajouts pour Réclamations
+  {
+    title: "Réclamer",
+    route: "/reclamer",
+    icon: AlertCircle,
+  },
+  {
+    title: "Réclamations",
+    route: "/reclamations",
+    icon: MessagesSquare,
   }
 ];

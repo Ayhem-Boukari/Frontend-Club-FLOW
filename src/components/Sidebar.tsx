@@ -1,4 +1,5 @@
 "use client";
+
 import { pageRoutes } from "@/lib/constants";
 import { LogOut, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
@@ -18,7 +19,6 @@ export default function Sidebar() {
     router.push("/");
   };
 
-  // Animation variants
   const sidebarVariants = {
     open: { opacity: 1, x: 0 },
     closed: { opacity: 0, x: "100%" },
@@ -31,20 +31,17 @@ export default function Sidebar() {
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.3 }}
-        className="hidden w-fit max-h-screen sm:flex flex-col justify-start rounded-3xl items-center bg-gradient-to-b from-[#00008B] to-[#000023] px-4 py-8 gap-6 my-2 mr-2 shadow-xl"
+        className="hidden sm:flex flex-col justify-start items-center bg-gradient-to-b from-[#00008B] to-[#000023] h-screen overflow-y-auto w-80 px-5 py-8 gap-6 shadow-xl"
       >
-        <Link href="/" className="flex lg:hidden w-full justify-center">
-          <motion.div whileHover={{ scale: 1.05 }}>
-            <Image src="/logos/light.png" width={70} height={70} alt="logo" />
-          </motion.div>
-        </Link>
-        <Link href="/" className="hidden lg:flex justify-center">
+        {/* Logo */}
+        <Link href="/" className="flex justify-center">
           <motion.div whileHover={{ scale: 1.05 }}>
             <Image src="/logos/light.png" width={128} height={128} alt="logo" />
           </motion.div>
         </Link>
 
-        <div className="flex flex-col items-center justify-center w-full gap-2">
+        {/* Navigation Links */}
+        <div className="flex flex-col items-start w-full gap-2">
           {pageRoutes.map((page, index) => (
             <motion.div
               key={index}
@@ -58,20 +55,21 @@ export default function Sidebar() {
                   pathname === page.route
                     ? "bg-primary text-white shadow-md"
                     : "text-white hover:bg-white/10"
-                } group rounded-xl flex items-center justify-center lg:justify-start gap-4 w-full py-3 px-4 cursor-pointer transition-all duration-300`}
+                } group rounded-xl flex items-center gap-4 w-full py-3 px-4 cursor-pointer transition-all duration-300`}
               >
                 <page.icon 
                   size={24} 
                   strokeWidth={pathname === page.route ? 2 : 1.8} 
                   className={pathname === page.route ? "text-primary" : "text-white"}
                 />
-                <span className="hidden lg:flex font-medium truncate">
+                <span className="font-medium whitespace-normal break-words">
                   {page.title}
                 </span>
               </Link>
             </motion.div>
           ))}
 
+          {/* Logout Button */}
           <motion.div
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
@@ -79,12 +77,10 @@ export default function Sidebar() {
           >
             <button
               onClick={handleLogout}
-              className="group rounded-xl flex items-center justify-start gap-4 w-full py-3 px-4 border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 cursor-pointer transition-all duration-300"
+              className="group rounded-xl flex items-center gap-4 w-full py-3 px-4 border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 cursor-pointer transition-all duration-300"
             >
               <LogOut size={24} strokeWidth={1.8} />
-              <span className="hidden lg:flex font-medium truncate">
-                Se Déconnecter
-              </span>
+              <span className="font-medium">Se Déconnecter</span>
             </button>
           </motion.div>
         </div>
@@ -132,7 +128,7 @@ export default function Sidebar() {
                 </motion.div>
               </div>
 
-              <ul className="h-full w-full flex flex-col px-6 py-8 gap-4">
+              <ul className="h-full w-full flex flex-col px-6 py-8 gap-4 overflow-y-auto">
                 {pageRoutes.map((page, index) => (
                   <motion.li
                     key={index}
